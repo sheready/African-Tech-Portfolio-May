@@ -1,7 +1,13 @@
+body{
+  overflow-y: scroll;
+}
+.navbar .container{
+  margin-left:10px;
+}
 /* Set bg Image */
 .bgImage {
   height: 100vh;
-  background: url("../assets/banner.jpg");
+  background: url("../assets/bg_1.jpg");
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -15,12 +21,14 @@
 
 /* desc */
 .hero_desc {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .container-fluid {
   color: white;
   margin-left: 20vw;
+  display:inline;
+
 }
 
 .hero_text {
@@ -31,6 +39,18 @@
   transform: translate(50%, 50%) !important;
 }
 
+.img-fluid{
+  height:550px;
+  width:450px;
+  position: absolute;
+  top:20%;
+  left:65%;
+}
+
+#desc{
+  margin-left: 20px;
+}
+
 /* Remove deafults  */
 h1,
 h2,
@@ -39,4 +59,82 @@ h4,
 h5,
 h6 {
   margin-top: 5em !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    overflow-y: scroll;
+  }
+  .img-fluid{
+    height:200px;
+    width:150px;
+    position: absolute;
+    top:20%;
+    left:35%;
+  }
+
+  .hero_title {
+    font-size: 2.5rem;
+  }
+  .hero-text{
+    margin-top:10em ;
+    top: 50%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body{
+    overflow-y: scroll;
+  }
+  .img-fluid{
+    height:250px;
+    width:200px;
+    position: absolute;
+    top:20%;
+    left:35%;
+  }
+  .hero_desc {
+    font-size: 1rem;
+  }
+  .hero-text{
+    margin-top:10em ;
+    top: 50%;
+  }
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body{
+    overflow-y: scroll;
+  }
+  .img-fluid{
+    height:250px;
+    width:200px;
+    position: absolute;
+    top:20%;
+    left:35%;
+  }
+  .hero_desc {
+    font-size: 1rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .img-fluid{
+    height:550px;
+    width:400px;
+    position: absolute;
+    top:20%;
+    left:65%;
+  }
+  .hero_desc {
+    font-size: 2rem;
+  }
+  .hero-text{
+    margin-top:0.1em ;
+    /* top: 50%; */
+  }
 }
