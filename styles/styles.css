@@ -1,9 +1,11 @@
-body{
+body {
   overflow-y: scroll;
 }
-.navbar .container{
-  margin-left:10px;
+
+.navbar .container {
+  margin-left: 10px;
 }
+
 /* Set bg Image */
 .bgImage {
   height: 100vh;
@@ -27,7 +29,7 @@ body{
 .container-fluid {
   color: white;
   margin-left: 20vw;
-  display:inline;
+  display: inline;
 
 }
 
@@ -39,15 +41,15 @@ body{
   transform: translate(50%, 50%) !important;
 }
 
-.img-fluid{
-  height:550px;
-  width:450px;
+.img-fluid {
+  height: 550px;
+  width: 450px;
   position: absolute;
-  top:20%;
-  left:65%;
+  top: 20%;
+  left: 65%;
 }
 
-#desc{
+#desc {
   margin-left: 20px;
 }
 
@@ -61,80 +63,112 @@ h6 {
   margin-top: 5em !important;
 }
 
+
+/* ABOUT SECTION  */
+.about-title {
+  text-shadow: 5px 5px;
+}
+
+.about-img {
+  width: 70%;
+  float: right;
+  border-radius: 50%;
+  box-shadow: 0 0 10px;
+  /* border: 10px solid rgb(128, 128, 128, 0.9); */
+  
+}
+
+.about-img:hover {
+  border: 5px solid grey;
+}
+/* End of About Section */
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  body{
+  body {
     overflow-y: scroll;
   }
-  .img-fluid{
-    height:200px;
-    width:150px;
+
+  .img-fluid {
+    height: 200px;
+    width: 150px;
     position: absolute;
-    top:20%;
-    left:35%;
+    top: 20%;
+    left: 35%;
   }
 
   .hero_title {
     font-size: 2.5rem;
   }
-  .hero-text{
-    margin-top:10em ;
+
+  .hero-text {
+    margin-top: 10em;
     top: 50%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  body{
+  body {
     overflow-y: scroll;
   }
-  .img-fluid{
-    height:250px;
-    width:200px;
+
+  .img-fluid {
+    height: 250px;
+    width: 200px;
     position: absolute;
-    top:20%;
-    left:35%;
+    top: 20%;
+    left: 35%;
   }
+
   .hero_desc {
     font-size: 1rem;
   }
-  .hero-text{
-    margin-top:10em ;
+
+  .hero-text {
+    margin-top: 10em;
     top: 50%;
   }
- 
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  body{
+  body {
     overflow-y: scroll;
   }
-  .img-fluid{
-    height:250px;
-    width:200px;
+
+  .img-fluid {
+    height: 250px;
+    width: 200px;
     position: absolute;
-    top:20%;
-    left:35%;
+    top: 20%;
+    left: 35%;
   }
+
   .hero_desc {
     font-size: 1rem;
   }
+
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .img-fluid{
-    height:550px;
-    width:400px;
+  .img-fluid {
+    height: 550px;
+    width: 400px;
     position: absolute;
-    top:20%;
-    left:65%;
+    top: 20%;
+    left: 65%;
   }
+
   .hero_desc {
     font-size: 2rem;
   }
-  .hero-text{
-    margin-top:0.1em ;
+
+  .hero-text {
+    margin-top: 0.1em;
     /* top: 50%; */
   }
 }
