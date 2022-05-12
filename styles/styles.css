@@ -65,9 +65,10 @@ h6 {
 
 
 /* ABOUT SECTION  */
-.about-title {
+/* this is where we left off, implementing text shadow in about section title */
+/* .about-title {
   text-shadow: 5px 5px;
-}
+} */
 
 .about-img {
   width: 70%;
@@ -80,6 +81,12 @@ h6 {
 
 .about-img:hover {
   border: 5px solid grey;
+}
+
+.view-portfolio{
+  position: relative;
+  left: 150px;
+  top: 50px;
 }
 /* End of About Section */
 
