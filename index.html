@@ -65,7 +65,7 @@
 
     <!-- About section start -->
     <section class="container about-me">
-        <h1 class="about-title">About Stella</h1>
+        <h1 class="about-title" id="textbox">About Stella</h1>
         <div class="container row">
             <div class="col">
                 <p>I am a frontend web developer and I am currently learning more about how to style and position
@@ -84,7 +84,7 @@
                     <div class="col sm-6">
                         <h4><strong>Phone: </strong><a href="tel:+254722000000">+254722 000 000</a></h4>
                     </div>
-                    <div clas="col sm-6">
+                    <div class="col sm-6">
                         <h4><strong>Email: </strong><a href="mailto:example@email.com">example@email.com</a></h4>
                     </div>
                     <div class="col sm-6">
@@ -93,8 +93,11 @@
                 </div>
             </div>
             <div class="col">
-                <img class="img-flud about-img" src="assets/stella.jpg">
-                <button class="btn btn-secondary view-portfolio">View my Portfolio secondary</button>
+                <img class="img-flud about-img" src="assets/stella.jpg" id="stellaimg">
+                <button class="btn btn-secondary view-portfolio" onclick="myFunction();">View my Portfolio secondary</button>
+                <button class="btn btn-danger" onclick="changeImage();">Change My Position</button>
+                <span id="output">replace me</span>
+
             </div>
         </div>
         
@@ -103,7 +106,7 @@
 
 
 
-
+    <script src="js/portfolio.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
