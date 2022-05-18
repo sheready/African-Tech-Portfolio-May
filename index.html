@@ -53,7 +53,7 @@
             <div class="row align-items-center" id="desc">
                 <div class="col-lg-7 hero-text">
                     <h2 class="hero_title">Hello, my name is Stella Waithera</h2>
-                    <p class="hero_desc">I am a Software Developer, technical mentor and founder of Africantechgirl Org
+                    <p class="hero_desc">I am a Software Developer.
                     </p>
                 </div>
             </div>
@@ -65,44 +65,62 @@
 
     <!-- About section start -->
     <section class="container about-me">
-        <h1 class="about-title" id="textbox">About Stella</h1>
-        <div class="container row">
-            <div class="col">
-                <p>I am a frontend web developer and I am currently learning more about how to style and position
-                    content in an element. I think learning is awesome and I cannot wait to keep on learning more.</p>
-                
-                <div class="row mb-3">
-                    <div class="col sm-6">
-                        <h4><strong>Name: </strong>Stella Waithera</h4>
-                    </div>
-                    <div class="col sm-6">
-                        <h4><strong>Birthday: </strong>1st January, 1990</h4>
-                    </div>
-                    <div class="col sm-6">
-                        <h4><strong>Experience: </strong>10 years</h4>
-                    </div>
-                    <div class="col sm-6">
-                        <h4><strong>Phone: </strong><a href="tel:+254722000000">+254722 000 000</a></h4>
-                    </div>
-                    <div class="col sm-6">
-                        <h4><strong>Email: </strong><a href="mailto:example@email.com">example@email.com</a></h4>
-                    </div>
-                    <div class="col sm-6">
-                        <h4><strong>Freelance: </strong>Available</h4>
-                    </div>
-                </div>
+        <div class="card text-center">
+            <div class="card-header">
+              About Me
             </div>
-            <div class="col">
+            <div class="card-body">
+              <p class="card-text">I am a software developer, computer science trainer, and the founder of Africantechgirl organization she leads a team in creating programs to bridge the skills and gender gap to individuals aged 6 years and above through digital skills training as well as developing back-end programs in software.Before fully committing to the Africantechgirl organization, Stella worked for one year as a technical writer and a volunteer at SheCodeAfrica.After a successful career in writing technical articles and training students of different age groups in computer programming, she now leads and creates structures, systems, and programs on how to support and get more Africans into STEM.Stella enjoys baking and outdoor activities.</p>
+              <a href="assets/resume.pdf" class="btn btn-primary">Download my resume</a>
+              <a href="mailto:example@email.com" class="btn btn-primary">Send me an email</a>
+            </div>
+            
+        </div>
+        
+            <!-- <div class="col">
                 <img class="img-flud about-img" src="assets/stella.jpg" id="stellaimg">
                 <button class="btn btn-secondary view-portfolio" onclick="myFunction();">View my Portfolio secondary</button>
                 <button class="btn btn-danger" onclick="changeImage();">Change My Position</button>
                 <span id="output">replace me</span>
 
-            </div>
+            </div> -->
         </div>
         
     </section>
     <!-- about section end -->
+    <section class="container contact-me">
+        <div class="container" id="contact-header">
+            <h2>Contact Me</h2>
+            <p>Know where I am from, or leave me a message</p>
+        </div>
+        <div class="row" id="contact-row">
+            <div class="column" id="contact-col1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.225072199222!2d36.794200197912346!3d-1.2905407652209293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a903f7696b%3A0x75afd6fcf72ec080!2s6th%20Floor%2C%20Standard%20Building%2C%20Standard%20Street%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1652893700243!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="column" id="contact-col2">
+                <form action="index.html">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                    <label for="country">Country</label>
+                    <select id="contry" name="country">
+                        <option value="Kenya">Kenya</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Ghana">Ghana</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Leave me a message..."></textarea>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                    
+                </form>
+            </div>
+            
+        </div>
+
+    </section>
 
 
 
