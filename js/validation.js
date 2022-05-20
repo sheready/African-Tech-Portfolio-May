@@ -18,7 +18,7 @@
           }
         }, false); //level 2 end
     }, false); //level 1 end
-  })(); //end of function()
+  })(); //end of function 
   
   function setValidationResponse() {
       var emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;//Regular expression to validate email addresses
