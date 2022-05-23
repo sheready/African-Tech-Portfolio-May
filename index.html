@@ -71,8 +71,8 @@
             </div>
             <div class="card-body">
               <p class="card-text">I am a software developer, computer science trainer, and the founder of Africantechgirl organization she leads a team in creating programs to bridge the skills and gender gap to individuals aged 6 years and above through digital skills training as well as developing back-end programs in software.Before fully committing to the Africantechgirl organization, Stella worked for one year as a technical writer and a volunteer at SheCodeAfrica.After a successful career in writing technical articles and training students of different age groups in computer programming, she now leads and creates structures, systems, and programs on how to support and get more Africans into STEM.Stella enjoys baking and outdoor activities.</p>
-              <a href="assets/resume.pdf" class="btn btn-primary">Download my resume</a>
-              <a href="mailto:example@email.com" class="btn btn-primary">Send me an email</a>
+              <a href="assets/resume.pdf" class="btn btn-primary" id="resumebutton">Download my resume</a>
+              <a href="mailto:example@email.com" class="btn btn-primary" id="emailbutton">Send me an email</a>
             </div>
             
         </div>
@@ -88,6 +88,7 @@
         
     </section>
     <!-- about section end -->
+    <!-- contact section -->
     <section class="container contact-me">
         <div class="container" id="contact-header">
             <h2>Contact Me</h2>
@@ -95,33 +96,17 @@
         </div>
         <div class="row" id="contact-row">
             <div class="column" id="contact-col1">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.225072199222!2d36.794200197912346!3d-1.2905407652209293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a903f7696b%3A0x75afd6fcf72ec080!2s6th%20Floor%2C%20Standard%20Building%2C%20Standard%20Street%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1652893700243!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.225072199222!2d36.794200197912346!3d-1.2905407652209293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a903f7696b%3A0x75afd6fcf72ec080!2s6th%20Floor%2C%20Standard%20Building%2C%20Standard%20Street%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1652893700243!5m2!1sen!2ske" width="430" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
+
             <div class="column" id="contact-col2">
-                <!-- <form action="index.html">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-                    <label for="country">Country</label>
-                    <select id="contry" name="country">
-                        <option value="Kenya">Kenya</option>
-                        <option value="Tanzania">Tanzania</option>
-                        <option value="Uganda">Uganda</option>
-                        <option value="Zambia">Zambia</option>
-                        <option value="Ghana">Ghana</option>
-                    </select>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Leave me a message..."></textarea>
-                    <button type="submit" class="btn btn-info">Submit</button>
-                    
-                </form> -->
 
 
-                <form name="frmContact" id="frmContact" method="post" action=""
+                <form name="frmContact" id="frmContact" method="post" action="" target="_blank"
                     enctype="multipart/form-data" novalidate>
                     <div class="row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-8">
                             <label>Name</label> <span id="userName-info"
                                 class="invalid-feedback"></span>
                             <div class="input-group">
@@ -129,71 +114,68 @@
                                 </div>
                                 <input type="text" class="form-control" name="userName"
                                     id="userName" required>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-md-4">
-					<label>Email</label> <span id="userEmail-info"
-						class="invalid-feedback"></span>
-					<div class="input-group">
-						<div class="input-group-prepend">
-						</div>
-						<input type="email" name="userEmail" id="userEmail"
-							class="form-control" required>
-					</div>
-					<small id="emailHelp" class="form-text text-muted">Your email will
-						not be shared.</small>
-				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-md-8">
-					<label>Subject</label> <span id="subject-info"
-						class="invalid-feedback"></span>
-					<div class="input-group">
+					        </div>
+				        </div>
+			        </div>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label>Email</label> <span id="userEmail-info"
+                                class="invalid-feedback"></span>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="email" name="userEmail" id="userEmail"
+                                    class="form-control" required>
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">Your email will
+                                not be shared.</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label>Subject</label> <span id="subject-info"
+                                class="invalid-feedback"></span>
+                            <div class="input-group">
 
-						<div class="input-group-prepend">
-						</div>
-						<input type="text" name="subject" id="subject"
-							class="form-control" required>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-md-8">
-					<label>Message</label> <span id="content-info"
-						class=" invalid-feedback"></span>
-					<div class="input-group">
-						<div class="input-group-prepend">
-						</div>
-						<textarea class="form-control" rows="5" name="message"
-							id="message" required></textarea>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<input type="submit" name="send" class="btn btn-primary"
-						value="Send Message" />
-				</div>
-			</div>
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="text" name="subject" id="subject"
+                                    class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label>Message</label> <span id="content-info"
+                                class=" invalid-feedback"></span>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                </div>
+                                <textarea class="form-control" rows="5" name="message"
+                                    id="message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <input type="submit" name="send" class="btn btn-primary"
+                                value="Send Message" />
+                        </div>
+                    </div>
 
 
-            <!-- <div class="row">
-				<div class="col-md-8">
-					<div id="statusMessage" class="alert alert-success mt-3"
-						role="alert">
-					</div>
-				</div>
-			</div> -->
+                    <!-- <div class="row">
+                        <div class="col-md-8">
+                            <div id="statusMessage" class="alert alert-success mt-3"
+                                role="alert">
+                            </div>
+                        </div>
+                    </div> -->
 
-		</form>
-	</div>
+		        </form>
+	        </div>
 	
-            </div>
-            
         </div>
-
     </section>
 
 

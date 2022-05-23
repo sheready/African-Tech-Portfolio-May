@@ -69,7 +69,49 @@ h6 {
 /* .about-title {
   text-shadow: 5px 5px;
 } */
+.about-me{
+  margin-top:10px;
 
+  
+}
+
+.about-me .card{
+  border-style: none;
+  width: 110%;
+  height: 300px;
+  position: relative;
+  right:45px;
+}
+
+.about-me .card .card-header{
+  background-color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-style: none;
+  margin-bottom: 0px;
+}
+.about-me .card .card-body{
+  margin-top: 0px;
+}
+
+#resumebutton{
+  margin-right: 30px;
+}
+
+#resumebutton:hover{
+  background-color: gray;
+  color: white;
+}
+
+#emailbutton:hover{
+  background-color: gray;
+  color: white;
+
+}
+.about-me .card .card-body .card-text{
+  font-size: 22px;
+}
 .about-img {
   width: 70%;
   float: right;
@@ -183,10 +225,24 @@ h6 {
 /* Contact me section*/
 .contact-me{
   width:80%;
-  height:300px;
+  height: 500px;
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
+ 
+ 
+}
+#contact-header{
+  text-align: center;
+}
+#contact-header h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+#contact-header p{
+  font-weight: bold;
+  font-style: italic;
 }
 #contact-row{
   width:100%;
