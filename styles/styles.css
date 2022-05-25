@@ -132,7 +132,37 @@ h6 {
 }
 /* End of About Section */
 
+/* services section */
 
+#services{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  background-color: turquoise;
+}
+#services .row{
+  margin-top: 15px;
+  height: 90%;
+  width: 100%;
+  margin-left: 4px;
+}
+#services .row .col{
+  height: 370px ;
+}
+#services .row .col .card{
+  height: 100%;
+}
+
+#services .row .col .card img{
+  height: 45%;
+}
+
+#services .row .col .card .card-body{
+  margin-top: -75px;
+  height: 40%;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
@@ -224,16 +254,21 @@ h6 {
 
 /* Contact me section*/
 .contact-me{
-  width:80%;
-  height: 500px;
+  width:100%;
+  height: 650px;
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
- 
- 
+  position: absolute;
+  background-color: rgb(85, 85, 85);
+  position: relative;
+  margin-top: 100px;
+  
 }
 #contact-header{
   text-align: center;
+  margin-top: -120px;
+  color: white;
 }
 #contact-header h2{
   text-transform: uppercase;
@@ -250,14 +285,17 @@ h6 {
  
 }
 #contact-col1{
-  width:50%;
+  width:45%;
   height:100%;
- 
+  margin-left: 30px;
 }
 
 #contact-col2{
-  width:50%;
+  width:45%;
   height:100%;
+  margin-left: 15px;
+  padding: 0%;
+
   
 }
 #contact-col2 button{
@@ -276,4 +314,6 @@ select{
 
 label{
   margin-bottom: 0;
+  color: white;
 }
+

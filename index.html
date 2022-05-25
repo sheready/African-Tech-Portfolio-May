@@ -64,7 +64,7 @@
     <!-- Banner End -->
 
     <!-- About section start -->
-    <section class="container about-me">
+    <section class="container about-me" id="about">
         <div class="card text-center">
             <div class="card-header">
               About Me
@@ -88,15 +88,60 @@
         
     </section>
     <!-- about section end -->
+
+    <!-- services -->
+    <section class="container" id="services">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="assets/writing.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/tm.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/design.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/swdev.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- end of services -->
     <!-- contact section -->
-    <section class="container contact-me">
+    <section class="container contact-me" id="contact">
         <div class="container" id="contact-header">
             <h2>Contact Me</h2>
             <p>Know where I am from, or leave me a message</p>
         </div>
         <div class="row" id="contact-row">
             <div class="column" id="contact-col1">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.225072199222!2d36.794200197912346!3d-1.2905407652209293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a903f7696b%3A0x75afd6fcf72ec080!2s6th%20Floor%2C%20Standard%20Building%2C%20Standard%20Street%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1652893700243!5m2!1sen!2ske" width="430" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.225072199222!2d36.794200197912346!3d-1.2905407652209293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a903f7696b%3A0x75afd6fcf72ec080!2s6th%20Floor%2C%20Standard%20Building%2C%20Standard%20Street%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1652893700243!5m2!1sen!2ske" width="470" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
 
@@ -106,7 +151,7 @@
                 <form name="frmContact" id="frmContact" method="post" action="" target="_blank"
                     enctype="multipart/form-data" novalidate>
                     <div class="row">
-                        <div class="form-group col-md-8">
+                        <div class="form-group col-md-11">
                             <label>Name</label> <span id="userName-info"
                                 class="invalid-feedback"></span>
                             <div class="input-group">
@@ -118,7 +163,7 @@
 				        </div>
 			        </div>
                     <div class="row">
-                        <div class="form-group col-md-8">
+                        <div class="form-group col-md-11">
                             <label>Email</label> <span id="userEmail-info"
                                 class="invalid-feedback"></span>
                             <div class="input-group">
@@ -132,7 +177,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-8">
+                        <div class="form-group col-md-11">
                             <label>Subject</label> <span id="subject-info"
                                 class="invalid-feedback"></span>
                             <div class="input-group">
@@ -145,7 +190,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-8">
+                        <div class="form-group col-md-11">
                             <label>Message</label> <span id="content-info"
                                 class=" invalid-feedback"></span>
                             <div class="input-group">
@@ -157,9 +202,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-10">
                             <input type="submit" name="send" class="btn btn-primary"
-                                value="Send Message" />
+                                value="Send Message"  style="margin-left:45px;"/>
                         </div>
                     </div>
 
